@@ -1,0 +1,27 @@
+// src/types/index.ts
+export type Difficulty = 'Intro' | 'Core' | 'Stretch';
+
+export interface Lesson {
+  id: string;
+  title: string;
+  number?: number;
+  durationMin?: number;
+  difficulty?: Difficulty;
+  topics: string[];
+  summary?: string;
+}
+
+export type ChatRole = 'system' | 'coach' | 'user';
+
+export interface ChatTurn {
+  role: ChatRole;
+  text: string;
+  ts: number; // Date.now()
+}
+
+export interface ChatState {
+  lesson?: Lesson | null;
+  history: ChatTurn[];
+  isTyping: boolean;
+}
+

@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/chatinterface.tsx","./src/components/chatmessage.tsx","./src/components/header.tsx","./src/components/lessoncard.tsx","./src/components/lessongrid.tsx","./src/components/progressstats.tsx","./src/data/lessons.ts","./src/hooks/usechat.ts","./src/types/index.ts"],"version":"5.9.2"}

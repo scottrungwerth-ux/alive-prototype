@@ -1,6 +1,8 @@
 
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App'
+[build]
+command = "npm run build"
+publish = "dist"
 
-createRoot(document.getElementById('root')!).render(<App />)
+[build.environment]
+NODE_VERSION = "20"
+
